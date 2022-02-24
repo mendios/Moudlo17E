@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>CALCULADORA</title>
+	
+	
+   	 <script type="text/javascript">
+   	//function that display value
+    function dis(val)
+    {
+        document.getElementById("result").value+=val
+    }
+           
+    //function that evaluates the digit and return result
+    function solve()
+    {
+        let x = document.getElementById("result").value
+        let y = eval(x)
+        document.getElementById("result").value = y
+    }
+           
+    //function that clear the display
+    function clr()
+    {
+        document.getElementById("result").value = ""
+    }
+
+	</script>
+	<style>
+		input[type="text"]
+         {
+         background-color:white;
+         border: solid black 3px;
+         width: 15%;
+     }
+	</style>
+    <script type = "text/javascript" src = "js/jquery-3.6.0.min.js"></script>
+	<script>   
+          $(document).ready(function(){
+          	
+               $('#tecla7').click(function(){
+                    $('#tecla7').attr('src', 'tecla7_click.png');
+
+               });
+               $('#tecla8').click(function(){
+                    $('#tecla8').attr('src', 'tecla8_click.png');
+               });
+               $('#tecla9').click(function(){
+                    $('#tecla9').attr('src', 'tecla9_click.png');
+               });
+               $('#tecla6').click(function(){
+                    $('#tecla6').attr('src', 'tecla6_click.png');
+               });
+               $('#tecla5').click(function(){
+                    $('#tecla5').attr('src', 'tecla5_click.png');
+               });
+               $('#tecla4').click(function(){
+                    $('#tecla4').attr('src', 'tecla4_click.png');
+               });
+               $('#tecla3').click(function(){
+                    $('#tecla3').attr('src', 'tecla3_click.png');
+               });
+               $('#tecla2').click(function(){
+                    $('#tecla2').attr('src', 'tecla2_click.png');
+               });
+               $('#tecla1').click(function(){
+                    $('#tecla1').attr('src', 'tecla1_click.png');
+               });
+               $('#tecla0').click(function(){
+                    $('#tecla0').attr('src', 'tecla0_click.png');
+               });
+               $('#tecla_vezes').click(function(){
+                    $('#tecla_vezes').attr('src', 'tecla_vezes_click.png');
+               });
+               $('#tecla_dividir').click(function(){
+                    $('#tecla_dividir').attr('src', 'tecla_dividir_click.png');
+               });
+               $('#tecla_vezes').click(function(){
+                    $('#tecla_vezes').attr('src', 'tecla_vezes_click.png');
+               });
+               $('#tecla_mais').click(function(){
+                    $('#tecla_mais').attr('src', 'tecla_mais_click.png');
+               });
+               $('#tecla_menos').click(function(){
+                    $('#tecla_menos').attr('src', 'tecla_menos_click.png');
+               });
+               $('#teclaC').click(function(){
+                    $('#teclaC').attr('src', 'teclaC_click.png');
+               });
+               $('#tecla_igual').click(function(){
+                    $('#tecla_igual').attr('src', 'tecla_igual_click.png');
+               });
+          
+		});
+	</script>
+</head>
+	
+	
+<body>
+	<main>
+    <input type="text" id="result"/>
+<br>
+<br>
+<img src="tecla7.png" width="50" height="50" id="tecla7">
+<img src="tecla8.png" width="50" height="50" id="tecla8">
+<img src="tecla9.png" width="50" height="50" id="tecla9">
+<img src="teclaC.png" width="50" height="50" id="teclaC" >
+<br>
+<img src="tecla4.png"width="50" height="50" id="tecla4">
+<img src="tecla5.png"width="50" height="50" id="tecla5">
+<img src="tecla6.png"width="50" height="50" id="tecla6">
+<img src="tecla_dividir.png" width="50" height="50" id="tecla_dividir">
+<br>
+<img id="tecla1" src="tecla1.png"width="50" height="50">
+<img src="tecla2.png"width="50" height="50" id="tecla2">
+<img src="tecla3.png"width="50" height="50" id="tecla3">
+<img src="tecla_vezes.png"width="50" height="50" id="tecla_vezes">
+<br>
+<img src="tecla0.png"width="50" height="50" id="tecla0">
+<img src="tecla_mais.png"width="50" height="50" id="tecla_mais">
+<img src="tecla_menos.png"width="50" height="50" id="tecla_menos">
+<img1 src="tecla_igual.png"width="50" height="50" id="tecla_igual">
+</main>
+</body>
+</html>
